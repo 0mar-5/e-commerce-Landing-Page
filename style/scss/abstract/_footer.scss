@@ -1,0 +1,55 @@
+@use "./variables" as vars;
+@use "./mixins";
+
+footer p {
+  @include mixins.fontController(17px, 600, 24px);
+  color: vars.$primary-font-color;
+}
+footer h4 {
+  @include mixins.fontController(24px, bold, 29px);
+  margin-bottom: 20px;
+}
+footer li {
+  margin-bottom: 13px;
+}
+ul {
+  padding-left: 0;
+}
+.info li,
+a {
+  @include mixins.fontController(15px, 600, 24px);
+}
+.h-30 {
+  height: 30px;
+}
+.info li img {
+  padding-right: 3px;
+}
+.stores__logos {
+  padding-top: 50px;
+  padding-bottom: 29px;
+}
+
+.social__title {
+  @include mixins.fontController(16px, bold, 20px);
+}
+.discount {
+  font-size: 14px;
+  color: vars.$grey-font-color;
+}
+.copyright {
+  font-size: 14px;
+  color: vars.$grey-font-color;
+}
+.copyright span {
+  color: vars.$primary-color;
+}
+.call-info h6 {
+  @include mixins.fontController(26px, bold, 26px);
+  color: vars.$primary-color;
+}
+
+.call-info p {
+  font-size: 12px;
+  color: vars.$grey-font-color;
+}

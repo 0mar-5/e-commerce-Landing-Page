@@ -1,0 +1,93 @@
+@use "./variables" as vars;
+@use "./mixins";
+
+.navbar-brand {
+  @include mixins.fontController(38px, bold, 14px);
+}
+.allCat-btn {
+  @include mixins.fontController(16px, bold, 44px);
+  border: none;
+  background-color: #fff;
+  color: vars.$primary-font-color;
+}
+
+.search_wapper {
+  border: 2px solid vars.$hr-color;
+  border-radius: 8px;
+}
+.search-input {
+  width: 526px;
+  padding: 16px;
+  border: none;
+  outline: none;
+  color: vars.$primary-font-color;
+  position: relative;
+}
+
+.bi-search {
+  position: absolute;
+  background-color: vars.$primary-font-color;
+  width: 1px;
+  height: 25px;
+  top: 30%;
+  left: 22%;
+  z-index: 100;
+}
+
+.location-btn {
+  color: vars.$primary-color;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+  height: 1px;
+  color: vars.$hr-color;
+  background: vars.$hr-color;
+}
+
+.fs-16 {
+  @include mixins.fontController(16px, 600, 35px);
+}
+.mr-6 {
+  margin-right: 4rem;
+}
+.browse-allCat-btn {
+  border: none;
+  color: vars.$light-color;
+  background-color: vars.$primary-color;
+  padding: 12px 14px;
+}
+
+.nav-content h4 {
+  @include mixins.fontController(26px, 500, 26px);
+  color: vars.$primary-color;
+  margin-bottom: 0;
+}
+.nav-content p {
+  @include mixins.fontController(12px, 400, 12px);
+  color: vars.$grey-font-color;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1600px) {
+  .search-input {
+    width: 296px;
+  }
+  .bi-search {
+    left: 32%;
+  }
+  .browse-allCat-btn,
+  .fs-16 {
+    font-size: 14px;
+  }
+
+  .nav-content h4 {
+    font-size: 14px;
+  }
+  .nav-content p {
+    font-size: 9px;
+  }
+  .mr-6 {
+    margin-right: 1rem;
+  }
+}

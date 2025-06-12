@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commarce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style/dist/main.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="container_page navbar navbar-expand-lg navbar-light py-2 align-items-baseline gap-5">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/imgs/Header.png" alt="logo image" /> Logo
+        </a>
+
+        <!-- Burger menu button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center flex-grow-1">
+                <li class="nav-item ">
+                    <div class="input-group position-relative me-3 search_wapper">
+                        <button class="btn dropdown-toggle allCat-btn" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            All Categories
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Category 1</a></li>
+                            <li><a class="dropdown-item" href="#">Category 2</a></li>
+                            <li><a class="dropdown-item" href="#">Category 3</a></li>
+                        </ul>
+
+                        <span class="bi bi-search"></span>
+                        <input type="search " class="search-input" placeholder="Search for items..." />
+                        <img src="./assets/imgs/search.svg" alt="search icion" class="z-1" />
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center gap-3">
+                <li class="nav-item">
+                    <div class="input-group mb-3 ml-10">
+                        <button
+                            class="btn dropdown-toggle mt-2 d-flex justify-content-center align-items-center gap-2 location-btn"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/imgs/location.svg" alt="location image" />
+                            Your Location
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex justify-content-center align-items-center gap-2" href="#">
+                        <img src="./assets/imgs/icon-heart.svg fill.svg" alt="heart image" /> Wishlist
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex justify-content-center align-items-center gap-2" href="#">
+                        <img src="./assets/imgs/cart.png" alt="cart image" /> Cart
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex justify-content-center align-items-center gap-2" href="#">
+                        <img src="./assets/imgs/person.svg" alt="account image" /> Account
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr />
+
+    <!-- second Navbar -->
+
+    <nav
+        class="container_page navbar navbar-expand-lg navbar-light py-2 justify-content-between align-items-baseline gap-5">
+
+        <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center gap-2">
+            <li class="nav-item ">
+                <div class="input-group position-relative me-3 ">
+                    <button class="btn dropdown-toggle fs-16 browse-allCat-btn" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./assets/imgs/Icon.png" class="pe-2" alt="icon" />
+                        Browse All Categories
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Category 1</a></li>
+                        <li><a class="dropdown-item" href="#">Category 2</a></li>
+                        <li><a class="dropdown-item" href="#">Category 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item mb-2 mr-6">
+                <a href="#" class="nav-link fs-16"><img src="./assets/imgs/icon-hot.svg" alt="hot icon" /> Deals</a>
+            </li>
+
+            <ul class="navbar-nav mb-2 mb-lg-0 d-flex gap-3">
+                <li class="nav-item">
+                    <div class="input-group mb-3 ">
+                        <a href="#"
+                            class="btn fs-16 dropdown-toggle mt-2 d-flex justify-content-center align-items-center gap-2 "
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn fs-16 mt-2 d-flex justify-content-center align-items-center gap-2 ">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="input-group mb-3 ">
+                        <a href="#"
+                            class="btn fs-16 dropdown-toggle mt-2 d-flex justify-content-center align-items-center gap-2 "
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="input-group mb-3 ">
+                        <a href="#"
+                            class="btn dropdown-toggle fs-16 mt-2 d-flex justify-content-center align-items-center gap-2 "
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Vendors
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="input-group mb-3 ">
+                        <a href="#"
+                            class="btn dropdown-toggle fs-16 mt-2 d-flex justify-content-center align-items-center gap-2 "
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Mega menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="input-group mb-3 ">
+                        <a href="#"
+                            class="btn fs-16 dropdown-toggle mt-2 d-flex justify-content-center align-items-center gap-2 "
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="input-group mb-3 ">
+                        <a href="#"
+                            class="btn fs-16 dropdown-toggle mt-2 d-flex justify-content-center align-items-center gap-2 "
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn fs-16 mt-2 d-flex justify-content-center align-items-center gap-2 "
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Contact
+                    </a>
+
+                </li>
+
+            </ul>
+        </ul>
+
+        <div class="d-flex gap-2">
+            <div class="">
+                <img src="./assets/imgs/icon-headphone.svg.png" alt="headphone icon" />
+            </div>
+            <div class="nav-content">
+                <h4>1900 - 888</h4>
+                <p>24/7 Support Center</p>
+            </div>
+        </div>
+
+    </nav>
+
+    <hr />
+    <main class="container_page d-grid">
+        <!-- Hero section -->
+        <div class="row">
+            <div class="col-8 order-1 flex-grow-1 pl-res">
+                <section class="hero order-1 my-4 ">
+                    <div class="hero-content">
+                        <h1>Don’t miss amazing grocery deals</h1>
+                        <p>Sign up for the daily newsletter</p>
+                        <form>
+                            <input class="input_email" type="email" placeholder="Your emaill address" />
+                            <button class="sub_btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+
+                </section>
+                <!-- Popular Products -->
+                <section class="popular-products">
+                    <div class="popular-products__header d-flex">
+                        <h3>Popular Products</h3>
+                        <ul class="navbar-nav d-flex flex-row gap-3 ms-auto">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">All</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Milks & Dairies</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Coffes & Teas</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Pet Foods</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Meats</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Vegetables</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Fruits</a></li>
+                        </ul>
+                    </div>
+
+                    <!--Popular Products Cards  -->
+                    <div class="popular-products__cards d-flex gap-3 pt-4">
+                        <!-- card -->
+                        <div class="card card-wrapper">
+                            <img src="./assets/imgs/div.product-img.png" class="card-img-top" alt="product img">
+                            <div class="card-body">
+                                <span>Snack</span>
+                                <h5 class="card-title">Seeds of Change Organic Quinoe</h5>
+                                <div class="product__rate">
+                                    <img src="./assets/imgs/star-fill.svg" alt="star" />
+                                    <span class="ms-5">(4.0)</span>
+                                </div>
+                                <div class="product__owner pt-3">
+                                    <span>By </span>
+                                    <h6> NestFood</h6>
+                                </div>
+                                <div class="product__price d-flex align-items-center justify-content-between">
+                                    <span class="price">$28.85</span>
+                                    <span class="text-decoration-line-through">$32.8</span>
+                                    <a href="#" class="btn">
+                                        <img src="./assets/imgs/cart-Icon.png" alt="cart icon" />
+                                        Add</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="card card-wrapper">
+                            <img src="./assets/imgs/div.product-img (1).png" class="card-img-top" alt="product img">
+                            <div class="card-body">
+                                <span>Hodo Foods</span>
+                                <h5 class="card-title">All Natural Italian-Style Chicken Meatballs</h5>
+                                <div class="product__rate">
+                                    <img src="./assets/imgs/star-fill.svg" alt="star" />
+                                    <span class="ms-5">(3.5)</span>
+                                </div>
+                                <div class="product__owner pt-3">
+                                    <span>By </span>
+                                    <h6> Stouffer</h6>
+                                </div>
+                                <div class="product__price d-flex align-items-center justify-content-between">
+                                    <span class="price">$52.85</span>
+                                    <span class="text-decoration-line-through">$55.8</span>
+                                    <a href="#" class="btn">
+                                        <img src="./assets/imgs/cart-Icon.png" alt="cart icon" />
+                                        Add</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="card card-wrapper">
+                            <img src="./assets/imgs/div.product-img (2).png" class="card-img-top" alt="product img">
+                            <div class="card-body">
+                                <span>Snack</span>
+                                <h5 class="card-title">Angie’s Boomchickapop Sweet & Salty</h5>
+                                <div class="product__rate">
+                                    <img src="./assets/imgs/star-fill.svg" alt="star" />
+                                    <span class="ms-5">(4.0)</span>
+                                </div>
+                                <div class="product__owner pt-3">
+                                    <span>By </span>
+                                    <h6> StarKist</h6>
+                                </div>
+                                <div class="product__price d-flex align-items-center justify-content-between">
+                                    <span class="price">$48.85</span>
+                                    <span class="text-decoration-line-through">$52.8</span>
+                                    <a href="#" class="btn">
+                                        <img src="./assets/imgs/cart-Icon.png" alt="cart icon" />
+                                        Add</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="card card-wrapper">
+                            <img src="./assets/imgs/div.product-img (3).png" class="card-img-top" alt="product img">
+                            <div class="card-body">
+                                <span>Vegetables</span>
+                                <h5 class="card-title">Foster Farms Takeout Crispy Classic</h5>
+                                <div class="product__rate">
+                                    <img src="./assets/imgs/star-fill.svg" alt="star" />
+                                    <span class="ms-5">(4.0)</span>
+                                </div>
+                                <div class="product__owner pt-3">
+                                    <span>By </span>
+                                    <h6> NestFood</h6>
+                                </div>
+                                <div class="product__price d-flex align-items-center justify-content-between">
+                                    <span class="price">$17.85</span>
+                                    <span class="text-decoration-line-through">$19.8</span>
+                                    <a href="#" class="btn">
+                                        <img src="./assets/imgs/cart-Icon.png" alt="cart icon" />
+                                        Add</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="card card-wrapper">
+                            <img src="./assets/imgs/div.product-img (4).png" class="card-img-top" alt="product img">
+                            <div class="card-body">
+                                <span>Pet Foods</span>
+                                <h5 class="card-title">Blue Diamond Almonds Lightly</h5>
+                                <div class="product__rate">
+                                    <img src="./assets/imgs/star-fill.svg" alt="star" />
+                                    <span class="ms-5">(4.0)</span>
+                                </div>
+                                <div class="product__owner pt-3">
+                                    <span>By </span>
+                                    <h6> NestFood</h6>
+                                </div>
+                                <div class="product__price d-flex align-items-center justify-content-between">
+                                    <span class="price">$23.85</span>
+                                    <span class="text-decoration-line-through">$25.8</span>
+                                    <a href="#" class="btn">
+                                        <img src="./assets/imgs/cart-Icon.png" alt="cart icon" />
+                                        Add</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- products -->
+                <div class="products_wrapper d-flex justify-content-between">
+                    <!-- product 1 -->
+                    <div class="product_card card_one rounded-4 mb-4">
+                        <h4>Everyday Fresh & Clean with Our Products</h4>
+                        <a href="#" class="btn mt-3">Shop Now</a>
+                    </div>
+                    <!-- product 2 -->
+                    <div class="product_card card_two rounded-4 mb-4">
+                        <h4>Make your Breakfast Healthy and Easy</h4>
+                        <a href="#" class="btn mt-4">Shop Now</a>
+                    </div>
+                    <!-- product 2 -->
+                    <div class="product_card card_three rounded-4 mb-4">
+                        <h4>The best Organic Products Online</h4>
+                        <a href="#" class="btn mt-4">Shop Now</a>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- sideBar -->
+            <div class="col-2">
+                <section class=" my-4 d-none d-xl-block px-0">
+
+                    <!-- category container -->
+                    <div class="category-container rounded-4 border">
+                        <h2 class="fs-4 fw-bold category-title">Category</h2>
+                        <hr class="">
+
+                        <!-- grocery -->
+                        <div class="category-item rounded-2 mt-4">
+                            <div class="row d-flex align-items-center">
+                                <div class="category-item_icon col-3 d-flex align-items-center justify-content-center">
+                                    <img src="./assets/imgs/category-1.svg" alt="grocery" class="object-fit-cover">
+                                </div>
+                                <div class="category-item_name col-7 d-flex align-items-center">
+                                    <p class="mb-0">groceries</p>
+                                </div>
+                                <div
+                                    class="category-item_number col-2 rounded-circle d-flex align-items-center justify-content-center">
+                                    <p class="mb-0">3</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- grocery -->
+                        <div class="category-item rounded-2">
+                            <div class="row d-flex align-items-center">
+                                <div class="category-item_icon col-3 d-flex align-items-center justify-content-center">
+                                    <img src="./assets/imgs/category-2.png" alt="grocery" class="object-fit-cover">
+                                </div>
+                                <div class="category-item_name col-7 d-flex align-items-center">
+                                    <p class="mb-0">Clothing</p>
+                                </div>
+                                <div
+                                    class="category-item_number col-2 rounded-circle d-flex align-items-center justify-content-center">
+                                    <p class="mb-0">4</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- grocery -->
+                        <div class="category-item rounded-2">
+                            <div class="row d-flex align-items-center">
+                                <div class="category-item_icon col-3 d-flex align-items-center justify-content-center">
+                                    <img src="./assets/imgs/category-3.png" alt="grocery" class="object-fit-cover">
+                                </div>
+                                <div class="category-item_name col-7 d-flex align-items-center">
+                                    <p class="mb-0">Pet Foods</p>
+                                </div>
+                                <div
+                                    class="category-item_number col-2 rounded-circle d-flex align-items-center justify-content-center">
+                                    <p class="mb-0">5</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- grocery -->
+                        <div class="category-item rounded-2">
+                            <div class="row d-flex align-items-center">
+                                <div class="category-item_icon col-3 d-flex align-items-center justify-content-center">
+                                    <img src="./assets/imgs/category-4.png" alt="grocery" class="object-fit-cover">
+                                </div>
+                                <div class="category-item_name col-7 d-flex align-items-center">
+                                    <p class="mb-0">Baking material</p>
+                                </div>
+                                <div
+                                    class="category-item_number col-2 rounded-circle d-flex align-items-center justify-content-center">
+                                    <p class="mb-0">8</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- grocery -->
+                        <div class="category-item rounded-2">
+                            <div class="row d-flex align-items-center">
+                                <div class="category-item_icon col-3 d-flex align-items-center justify-content-center">
+                                    <img src="./assets/imgs/category-5.png" alt="grocery" class="object-fit-cover">
+                                </div>
+                                <div class="category-item_name col-7 d-flex align-items-center">
+                                    <p class="mb-0">Fresh Fruit</p>
+                                </div>
+                                <div
+                                    class="category-item_number col-2 rounded-circle d-flex align-items-center justify-content-center">
+                                    <p class="mb-0">10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                <section class=" my-4 d-none d-xl-block px-0">
+
+                    <!-- products container -->
+                    <div class="category-container rounded-4 products">
+                        <h2 class="fs-4 fw-bold category-title">New products</h2>
+                        <hr>
+
+                        <!-- card -->
+                        <div class="category-item">
+                            <div class="row d-flex ">
+                                <div class="category-item_icon col-4 d-flex justify-content-center">
+                                    <img src="./assets/imgs/thumbnail-3.png" alt="thumbnail"
+                                        class="object-fit-cover category-img-size">
+                                </div>
+                                <div class="category-item_name col-7 d-flex flex-column gap-1 ms-2">
+                                    <h3 class="mb-0">Chen Cardigan</h3>
+                                    <p class="mb-0">$99.50</p>
+                                    <img src="./assets/imgs/star-fill.svg" class="icon-size" alt="star" />
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="category-item ">
+                            <div class="row d-flex ">
+                                <div class="category-item_icon col-4 d-flex justify-content-center">
+                                    <img src="./assets/imgs/thumbnail-4.png" alt="thumbnail"
+                                        class="object-fit-cover category-img-size">
+                                </div>
+                                <div class="category-item_name col-7 d-flex flex-column gap-1 ms-2">
+                                    <h3 class="mb-0">Chen Sweater</h3>
+                                    <p class="mb-0">$89.50</p>
+                                    <img src="./assets/imgs/star-fill.svg" class="icon-size" alt="star" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="category-item">
+                            <div class="row d-flex ">
+                                <div class="category-item_icon col-4 d-flex justify-content-center">
+                                    <img src="./assets/imgs/thumbnail-5.png" alt="thumbnail"
+                                        class="object-fit-cover category-img-size">
+                                </div>
+                                <div class="category-item_name col-7 d-flex flex-column gap-1 ms-2">
+                                    <h3 class="mb-0">Colorful Jacket</h3>
+                                    <p class="mb-0">$25</p>
+                                    <img src="./assets/imgs/star-fill.svg" class="icon-size" alt="star" />
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <!-- cta section -->
+        <section class="cta d-flex justify-content-between mt-4 mb-4 rounded-4">
+            <div class="cta__content">
+                <h3>Stay home & get your daily needs from our shop</h3>
+                <p>Start You'r Daily Shopping with <span>Nest Mart</span></p>
+                <form>
+                    <input class="input_email" type="email" placeholder="Your emaill address">
+                    <button class="sub_btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="cta__image">
+                <img src="./assets/imgs/banner-9.png" alt="banner image" />
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="container_page pt-5">
+        <div class="row">
+            <div class="col-3 ">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/imgs/Header.png" alt="logo image" /> Logo
+                </a>
+                <p class="mt-4 mb-4">Awesome grocery store website template</p>
+                <ul class="info">
+                    <li>
+                        <img src="./assets/imgs/List → Item → icon-location.svg.svg" alt="location" />
+                        Address: 5171 W Campbell Ave <br />undefined Kent, Utah 53127 United States
+                    </li>
+                    <li>
+                        <img src="./assets/imgs/List → Item → icon-contact.svg.svg" alt="contact" />
+                        Call Us:(+91) - 540-025-124553
+                    </li>
+                    <li>
+                        <img src="./assets/imgs/List → Item → icon-email-2.svg.svg" alt="email" />
+                        Email:sale@Nest.com
+                    </li>
+                    <li>
+                        <img src="./assets/imgs/List → Item → icon-clock.svg.svg" alt="clock" />
+                        Hours:10:00 - 18:00, Mon - Sat
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-3 ps-0">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Support Center</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 ">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">View Cart</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                            <li><a href="#">Track My Order</a></li>
+                            <li><a href="#">Help Ticket</a></li>
+                            <li><a href="#">Shipping Details</a></li>
+                            <li><a href="#">Compare products</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 ">
+                        <h4>Corporate</h4>
+                        <ul>
+                            <li><a href="#">Become a Vendor</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                            <li><a href="#">Farm Business</a></li>
+                            <li><a href="#">Farm Careers</a></li>
+                            <li><a href="#">Our Suppliers</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Promotions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h4>Popular</h4>
+                        <ul>
+                            <li><a href="#">Milk & Flavoured Milk</a></li>
+                            <li><a href="#">Butter and Margarine</a></li>
+                            <li><a href="#">Eggs Substitutes</a></li>
+                            <li><a href="#">Marmalades</a></li>
+                            <li><a href="#">Sour Cream and Dips</a></li>
+                            <li><a href="#">Tea & Kombucha</a></li>
+                            <li><a href="#">Cheese</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <h4>Install App</h4>
+                <div class="stores__logos">
+                    <a href="#">
+                        <img src="./assets/imgs/Link → app-store.png" alt="app store" />
+                    </a>
+                    <a href="#">
+                        <img src="./assets/imgs/Link → google-play.png" alt="google play store" />
+                    </a>
+                </div>
+                <p class="mb-5">Secured Payment Gateways</p>
+                <div class="d-flex align-items-baseline gap-2 h-30">
+                    <span class="social__title">Follow Us</span>
+                    <ul class="d-flex  gap-2">
+                        <li><a href="#"><img src="./assets/imgs/Link.png" alt="facebook" /> </a></li>
+                        <li><a href="#"><img src="./assets/imgs/Link (1).png" alt="twitter" /> </a></li>
+                        <li><a href="#"><img src="./assets/imgs/Link (2).png" alt="insta" /> </a></li>
+                        <li><a href="#"><img src="./assets/imgs/Link (3).png" alt="social" /> </a></li>
+                        <li><a href="#"><img src="./assets/imgs/Link (4).png" alt="youtube" /> </a></li>
+                    </ul>
+                </div>
+                <span class="discount">Up to 15% discount on your first subscribe</span>
+            </div>
+        </div>
+        <hr />
+        <div class="pt-5 pb-3 d-flex justify-content-between">
+            <p class="copyright">© 2022,<span>Nest</span>- HTML Ecommerce Template <br /> All rights reserved</p>
+            <div class="call-info d-flex gap-5">
+                <div class="d-flex">
+                    <img src="./assets/imgs/phone-call.png" alt="phone" />
+                    <div class="ps-3">
+                        <h6>01234567</h6>
+                        <p>Working 8:00 - 22:00</p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <img src="./assets/imgs/phone-call.png" alt="phone" />
+                    <div class="ps-3">
+                        <h6>01234567</h6>
+                        <p>24/7 Support Center</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

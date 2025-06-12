@@ -1,0 +1,34 @@
+@use "./variables" as vars;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_page {
+  width: 100%;
+  padding: 0 7rem;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  color: vars.$primary-font-color;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: vars.$primary-font-color;
+  cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+  .container_page {
+    padding: 0 5rem;
+  }
+}

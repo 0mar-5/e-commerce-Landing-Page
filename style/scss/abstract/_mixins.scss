@@ -1,0 +1,11 @@
+@mixin fontController($fontSize, $fontWeight, $lineHeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+@mixin backgroundImageStyle {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,97 @@
+@use "./variables" as vars;
+@use "./mixins";
+
+.popular-products {
+  padding: 50px 0;
+  margin-left: 43px;
+}
+.popular-products__header h3 {
+  @include mixins.fontController(32px, bold, 38px);
+}
+.popular-products__header a {
+  @include mixins.fontController(16px, 500, 16px);
+}
+
+.popular-products__header a:hover {
+  color: vars.$primary-color;
+}
+
+.card-wrapper {
+  width: 19%;
+}
+
+.card-wrapper .card-title {
+  @include mixins.fontController(16px, bold, 20px);
+  color: vars.$primary-font-color;
+}
+.card-wrapper span {
+  font-size: 14px;
+  color: #adadad;
+}
+
+.product__owner h6 {
+  display: inline-block;
+  font-size: 14px;
+  color: vars.$primary-color;
+}
+
+.product__price a {
+  padding: 10px;
+  color: vars.$primary-color;
+  background-color: vars.$primary-color-light;
+}
+
+.product__price .price {
+  @include mixins.fontController(18px, bold, 24px);
+  color: vars.$primary-color;
+}
+.products_wrapper {
+  margin-left: 42px;
+}
+.product_card {
+  padding: 50px 110px 40px 50px;
+  width: 405px;
+  height: 244px;
+  @include mixins.backgroundImageStyle;
+}
+.product_card h4 {
+  @include mixins.fontController(24px, bold, 29px);
+}
+.product_card a {
+  @include mixins.fontController(14px, bold, 24px);
+  color: vars.$light-color;
+  background-color: vars.$primary-color;
+  padding: 8px 28px 8px 13px;
+}
+.card_one {
+  background-image: url(../../assets/imgs/banner-1.png.png);
+}
+.card_two {
+  background-image: url(../../assets/imgs/banner-2.png);
+}
+.card_three {
+  background-image: url(../../assets/imgs/banner-3.png);
+}
+@media (max-width: 1600px) {
+  .popular-products__header a {
+    font-size: 14px;
+  }
+  .product__price .price {
+    font-size: 14px;
+  }
+  .card-wrapper .card-title {
+    font-size: 13px;
+    line-height: 18.5px;
+  }
+  .product__price a {
+    padding: 8px;
+  }
+  .card-wrapper span {
+    font-size: 12px;
+  }
+  .product_card {
+    padding: 50px 90px 40px 30px;
+    width: 330px;
+    height: 230px;
+  }
+}

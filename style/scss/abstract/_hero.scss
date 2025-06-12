@@ -1,0 +1,64 @@
+@use "./variables" as vars;
+@use "./mixins";
+
+.hero {
+  background-image: url(../../assets/imgs/hero.svg);
+  @include mixins.backgroundImageStyle;
+  margin-left: 40px;
+  border-radius: 20px;
+}
+.hero-content {
+  padding: 90px 75px;
+}
+.hero-content h1 {
+  width: 75%;
+  @include mixins.fontController(72px, 700, 72px);
+  padding-bottom: 31px;
+}
+
+.hero-content p {
+  width: 75%;
+  @include mixins.fontController(24px, 400, 24px);
+  padding-bottom: 65px;
+}
+.input_email,
+.sub_btn {
+  border: none;
+  outline: none;
+  border-radius: 42px;
+}
+.input_email {
+  width: 300px;
+  background-color: vars.$light-color;
+  padding: 22px;
+}
+.sub_btn {
+  color: vars.$light-color;
+  background-color: vars.$primary-color;
+  font-size: 16px;
+  transform: translateX(-35%);
+  padding: 20px 30px;
+}
+
+@media (max-width: 1600px) {
+  .hero-content h1 {
+    width: 75%;
+    font-size: 54px;
+    padding-bottom: 21px;
+  }
+  .hero-content p {
+    width: 75%;
+    font-size: 18px;
+    padding-bottom: 45px;
+  }
+  .input_email {
+    padding: 18px;
+  }
+  .sub_btn {
+    font-size: 16px;
+    padding: 16px 25px;
+  }
+  .pl-res {
+    padding-left: 4rem;
+  }
+}
