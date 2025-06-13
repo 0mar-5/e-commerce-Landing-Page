@@ -15,6 +15,7 @@ body {
   font-size: 14px;
   font-family: "Quicksand", sans-serif;
   color: vars.$primary-font-color;
+  overflow-x: hidden;
 }
 
 li {
@@ -30,5 +31,16 @@ a {
 @media (max-width: 1600px) {
   .container_page {
     padding: 0 5rem;
+  }
+}
+@media (max-width: 400px) {
+  .container_page {
+    padding: 0 1rem;
+  }
+  .f-column {
+    flex-direction: column;
+  }
+  .d-sm-none {
+    display: none !important;
   }
 }

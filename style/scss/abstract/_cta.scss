@@ -24,3 +24,27 @@
 .cta__content span {
   color: vars.$primary-color;
 }
+
+@media (max-width: 400px) {
+  .cta {
+    padding: 20px;
+    width: 380px;
+    height: 315px;
+    margin: 0 auto;
+  }
+  .cta__content {
+    width: 100%;
+  }
+  .cta__content h3 {
+    @include mixins.fontController(30px, bold, 36px);
+    padding-bottom: 15px;
+  }
+  .cta__content p {
+    @include mixins.fontController(16px, 400, 16px);
+    color: vars.$grey-font-color;
+    padding-bottom: 20px;
+  }
+  .cta__content form {
+    display: flex;
+  }
+}

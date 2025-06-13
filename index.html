@@ -41,7 +41,7 @@
                             <li><a class="dropdown-item" href="#">Category 3</a></li>
                         </ul>
 
-                        <span class="bi bi-search"></span>
+                        <span class="bi bi-search d-sm-none"></span>
                         <input type="search " class="search-input" placeholder="Search for items..." />
                         <img src="./assets/imgs/search.svg" alt="search icion" class="z-1" />
                     </div>
@@ -92,7 +92,7 @@
     <!-- second Navbar -->
 
     <nav
-        class="container_page navbar navbar-expand-lg navbar-light py-2 justify-content-between align-items-baseline gap-5">
+        class="container_page navbar navbar-expand-lg navbar-light py-2 justify-content-between align-items-baseline gap-5 d-sm-none">
 
         <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center gap-2">
             <li class="nav-item ">
@@ -226,11 +226,11 @@
 
     </nav>
 
-    <hr />
+    <hr class="d-sm-none" />
     <main class="container_page d-grid">
         <!-- Hero section -->
         <div class="row">
-            <div class="col-8 order-1 flex-grow-1 pl-res">
+            <div class="col-12 col-lg-8 order-1 flex-grow-1 pl-res">
                 <section class="hero order-1 my-4 ">
                     <div class="hero-content">
                         <h1>Don’t miss amazing grocery deals</h1>
@@ -244,9 +244,9 @@
                 </section>
                 <!-- Popular Products -->
                 <section class="popular-products">
-                    <div class="popular-products__header d-flex">
+                    <div class="popular-products__header d-flex f-column">
                         <h3>Popular Products</h3>
-                        <ul class="navbar-nav d-flex flex-row gap-3 ms-auto">
+                        <ul class="navbar-nav d-flex flex-row flex-wrap gap-3 ms-auto">
                             <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">All</a></li>
                             <li class="nav-item"> <a class="nav-link" href="#">Milks & Dairies</a></li>
                             <li class="nav-item"> <a class="nav-link" href="#">Coffes & Teas</a></li>
@@ -258,10 +258,11 @@
                     </div>
 
                     <!--Popular Products Cards  -->
-                    <div class="popular-products__cards d-flex gap-3 pt-4">
+                    <div class="popular-products__cards d-flex gap-3 pt-4 f-column">
                         <!-- card -->
                         <div class="card card-wrapper">
-                            <img src="./assets/imgs/div.product-img.png" class="card-img-top" alt="product img">
+                            <img src="./assets/imgs/div.product-img.png" class="card-img-top md-img-width"
+                                alt="product img">
                             <div class="card-body">
                                 <span>Snack</span>
                                 <h5 class="card-title">Seeds of Change Organic Quinoe</h5>
@@ -284,8 +285,9 @@
                             </div>
                         </div>
                         <!-- card -->
-                        <div class="card card-wrapper">
-                            <img src="./assets/imgs/div.product-img (1).png" class="card-img-top" alt="product img">
+                        <div class="card card-wrapper ">
+                            <img src="./assets/imgs/div.product-img (1).png" class="card-img-top"
+                                alt="product img md-img-width">
                             <div class="card-body">
                                 <span>Hodo Foods</span>
                                 <h5 class="card-title">All Natural Italian-Style Chicken Meatballs</h5>
@@ -384,7 +386,7 @@
                     </div>
                 </section>
                 <!-- products -->
-                <div class="products_wrapper d-flex justify-content-between">
+                <div class="products_wrapper d-flex justify-content-between f-column">
                     <!-- product 1 -->
                     <div class="product_card card_one rounded-4 mb-4">
                         <h4>Everyday Fresh & Clean with Our Products</h4>
@@ -405,7 +407,7 @@
                 </div>
             </div>
             <!-- sideBar -->
-            <div class="col-2">
+            <div class="col-12 col-lg-2 d-sm-none">
                 <section class=" my-4 d-none d-xl-block px-0">
 
                     <!-- category container -->
@@ -565,7 +567,7 @@
                 </form>
             </div>
 
-            <div class="cta__image">
+            <div class="cta__image d-sm-none">
                 <img src="./assets/imgs/banner-9.png" alt="banner image" />
             </div>
 
@@ -574,9 +576,9 @@
     </main>
 
     <!-- footer -->
-    <footer class="container_page pt-5">
+    <footer class="container_page pt-5 f-column">
         <div class="row">
-            <div class="col-3 ">
+            <div class="col-12 col-md-6 col-lg-3 ">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/imgs/Header.png" alt="logo image" /> Logo
                 </a>
@@ -600,9 +602,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6 col-lg-6">
                 <div class="row">
-                    <div class="col-3 ps-0">
+                    <div class="col-6 col-md-5 col-lg-3">
                         <h4>Company</h4>
                         <ul>
                             <li><a href="#">About Us</a></li>
@@ -614,7 +616,7 @@
                             <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
-                    <div class="col-3 ">
+                    <div class="col-6 col-md-5 col-lg-3  ">
                         <h4>Account</h4>
                         <ul>
                             <li><a href="#">Sign In</a></li>
@@ -626,7 +628,7 @@
                             <li><a href="#">Compare products</a></li>
                         </ul>
                     </div>
-                    <div class="col-3 ">
+                    <div class="col-6 col-md-5 col-lg-3  ">
                         <h4>Corporate</h4>
                         <ul>
                             <li><a href="#">Become a Vendor</a></li>
@@ -638,7 +640,7 @@
                             <li><a href="#">Promotions</a></li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-5 col-lg-3 ">
                         <h4>Popular</h4>
                         <ul>
                             <li><a href="#">Milk & Flavoured Milk</a></li>
@@ -652,7 +654,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 w-auto ms-auto sm-m">
                 <h4>Install App</h4>
                 <div class="stores__logos">
                     <a href="#">
@@ -677,9 +679,9 @@
             </div>
         </div>
         <hr />
-        <div class="pt-5 pb-3 d-flex justify-content-between">
+        <div class="pt-5 pb-3 d-flex justify-content-between ">
             <p class="copyright">© 2022,<span>Nest</span>- HTML Ecommerce Template <br /> All rights reserved</p>
-            <div class="call-info d-flex gap-5">
+            <div class="call-info d-flex gap-5 d-sm-none">
                 <div class="d-flex">
                     <img src="./assets/imgs/phone-call.png" alt="phone" />
                     <div class="ps-3">

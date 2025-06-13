@@ -93,5 +93,24 @@
     padding: 50px 90px 40px 30px;
     width: 330px;
     height: 230px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .products_wrapper {
+    margin-left: 0;
+  }
+  .popular-products {
+    padding: 50px 0;
+    width: 390px;
+    margin: 0 auto;
+  }
+  .popular-products__header a {
+    @include mixins.fontController(16px, 500, 0);
   }
 }

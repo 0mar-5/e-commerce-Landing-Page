@@ -62,3 +62,26 @@
     padding-left: 4rem;
   }
 }
+
+@media (max-width: 400px) {
+  .pl-res {
+    padding-left: 0;
+  }
+
+  .hero {
+    width: 390px;
+    margin: 0 auto;
+  }
+  .hero-content {
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    width: 100%;
+    @include mixins.fontController(32px, 700, 30px);
+    padding-bottom: 20px;
+  }
+  .hero-content form {
+    display: flex;
+  }
+}

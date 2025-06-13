@@ -13,6 +13,7 @@ body {
   font-size: 14px;
   font-family: "Quicksand", sans-serif;
   color: #253d4e;
+  overflow-x: hidden;
 }
 
 li {
@@ -28,6 +29,17 @@ a {
 @media (max-width: 1600px) {
   .container_page {
     padding: 0 5rem;
+  }
+}
+@media (max-width: 400px) {
+  .container_page {
+    padding: 0 1rem;
+  }
+  .f-column {
+    flex-direction: column;
+  }
+  .d-sm-none {
+    display: none !important;
   }
 }
 .navbar-brand {
@@ -204,6 +216,28 @@ hr {
   }
   .pl-res {
     padding-left: 4rem;
+  }
+}
+@media (max-width: 400px) {
+  .pl-res {
+    padding-left: 0;
+  }
+  .hero {
+    width: 390px;
+    margin: 0 auto;
+  }
+  .hero-content {
+    padding: 40px 20px;
+  }
+  .hero-content h1 {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+  .hero-content form {
+    display: flex;
   }
 }
 .category-container {
@@ -390,6 +424,26 @@ hr {
     padding: 50px 90px 40px 30px;
     width: 330px;
     height: 230px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .card-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .products_wrapper {
+    margin-left: 0;
+  }
+  .popular-products {
+    padding: 50px 0;
+    width: 390px;
+    margin: 0 auto;
+  }
+  .popular-products__header a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 0;
   }
 }
 .cta {
@@ -424,6 +478,33 @@ hr {
   color: #3bb77e;
 }
 
+@media (max-width: 400px) {
+  .cta {
+    padding: 20px;
+    width: 380px;
+    height: 315px;
+    margin: 0 auto;
+  }
+  .cta__content {
+    width: 100%;
+  }
+  .cta__content h3 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    padding-bottom: 15px;
+  }
+  .cta__content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #7e7e7e;
+    padding-bottom: 20px;
+  }
+  .cta__content form {
+    display: flex;
+  }
+}
 footer p {
   font-size: 17px;
   font-weight: 600;
@@ -448,7 +529,7 @@ ul {
 
 .info li,
 a {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 24px;
 }
@@ -496,6 +577,23 @@ a {
 .call-info p {
   font-size: 12px;
   color: #7e7e7e;
+}
+
+@media (max-width: 400px) {
+  .sm-m {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .sm-m h4 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 15px;
+    margin-bottom: 0;
+    padding-top: 15px;
+  }
+  .copyright {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
